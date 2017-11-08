@@ -9,17 +9,70 @@
 
   <name>practica3</name>
   <url>http://maven.apache.org</url>
+  <licenses>
+      <license>
+          <name>ulpgc</name>
+          <url>https://github.com/MYF95/HPDS-Maven-2</url>
+          <distribution>repo</distribution>
+          <comments>Licencia de educación</comments>
+      </license>
+  </licenses>
 
+  <organization>
+      <name>ULPGC</name>
+      <url>http://www.ulpgc.es</url>
+  </organization>
+
+  <developers>
+      <developer>
+          <name>Mack Yao Fu</name>
+          <email>mack.yao101@alu.ulpgc.es</email>
+          <url>https://github.com/MYF95</url>
+          <roles>
+              <role>developer</role>
+          </roles>
+          <timezone>-1</timezone>
+      </developer>
+      <developer>
+          <name>Foo Bar</name>
+          <email>mack.yao101@alu.ulpgc.es</email>
+          <url>https://github.com/MYF95</url>
+          <roles>
+              <role>developer</role>
+          </roles>
+          <timezone>-1</timezone>
+      </developer>
+  </developers>
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+    <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+
+
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>3.8.1</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>2.4</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jstl</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>taglibs</groupId>
+        <artifactId>standard</artifactId>
+        <version>1.1.2</version>
     </dependency>
   </dependencies>
 </project>
